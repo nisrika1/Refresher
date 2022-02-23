@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>Dashboard</title>
+<html>
+    <head onload="getUserName()">
+     <h1 id="user-id"></h1>
+    </head>
+    <body onload="getUserName()" style="text-align:center">
+        <h2> Enter below details for Business registration</h2>
+        <form style="text-align: left; margin-left: 500px;" onsubmit="userSubmitted()">
+            <b>Please select the type of the Organisation:</b><br><br>
+            <input type="radio" name="business-type" id="a" checked> Placement and Management Consultancy Services<br>
+            <input type="radio" name="business-type" id="b"> Training and Educational Institute<br>
+            <input type="radio" name="business-type" id="c"> Energy Efficient Pumps<br>
+            <input type="radio" name="business-type" id="d"> Electronic Surveillance and Security<br>
+            <br><br>
+            <b>Name of the Enterprise</b><br><br>
+            <input type="text" id="name" placeholder="ABC pvt Ltd" required autofocus/>
+            <br><br>
+            <b>Official Address of the Enterprise</b><br><br>
+            <label>Line 1 - </label>
+            <input type="text" id="business-address-1" placeholder="Address Line 1" required autofocus/>
+            <br/><br/>
+            <label>Line 2 - </label>
+            <input type="text" id="business-address-2" placeholder="Address Line 2" required/><br/><br/>
+            <label>Zip Code:</label> 
+            <input type="text" id="zip-code-business" placeholder="XXXXX" name="zip-code-business" pattern="[0-9]{5}" required><br>
+            <h3>Please attach your location</h3>
+            <button onCLick ="getUserLocationAccess()" type="button">Get Location</button>
+            <p id="user-location"></p>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    <script src="dashboard.js"></script>
+</html>

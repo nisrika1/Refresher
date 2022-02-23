@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>
+    Register Business
+</title>
+
+<head>
+    <h1>Register your Enterprise</h1>
+</head>
+
+<body style="text-align:center">
+    <img src="./logo.jpg" width="400" height="250">
+    <br />
+    <h2>The Government Launched MSME schemes for New Enterprenuers! <br /> Register your Business
+        under MSME scheme to Avail Tax Benefits</h2>
+    <h3 style="color:red">Register here if you are a new user and Login to view status.</h3>
+    <h4>New User?
+        <button type="button" onclick="registerNewUser()" id="registration">Register Here!</button>
+    </h4>
+    <br />
+    <h2>Please login here</h2>
+    <form onsubmit="loginUser()" id="login-form">
+        <label>User Email - </label>
+        <input type="email" id="user-email" required autofocus />
+        <br /><br />
+        <label>Password - </label>
+        <input type="password" id="user-password" required /><br /><br />
+        <input type="submit" id="login-submit-button" value="Login" name="Login"/>
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
